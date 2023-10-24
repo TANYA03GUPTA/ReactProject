@@ -85,6 +85,7 @@ export default function App() {
         <FormSplittBill
           selectedfrnd={selectedfrnd}
           onSplitBill={handleSplitBill}
+          key={selectedfrnd.id}
         />
       )}
     </div>
@@ -173,7 +174,7 @@ function FormAddFriend({ onAddfriend }) {
   );
 }
 
-function FormSplittBill({ selectedfrnd, onSplitBill }) {
+function FormSplittBill({ selectedfrnd, onSplitBill, key }) {
   console.log("formsplit bill show");
 
   const [bill, setBill] = useState("");
