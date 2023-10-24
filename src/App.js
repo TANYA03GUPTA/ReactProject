@@ -1,3 +1,4 @@
+//This is a bill spliting app
 import { useState } from "react";
 
 const initialFriends = [
